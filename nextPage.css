@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+body{
+    background-color: #8CC461;
+}
+.container{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.trophyImg{
+    position: relative;
+}
+.star{
+    height: 320px;
+    width: 650px;
+}
+.trophy{
+    position: absolute;
+    left: 33%;
+    top: 30%;
+}
+.hurray{
+    font-size: 80px;
+    color: white;
+}
+.youWon{
+    font-size: 35px;
+    color: white;
+}
+.wonBtn{
+    background-color: white;
+    color: grey;
+    width: 180px;
+    height: 45px;
+    font-size: 22px;
+    border-radius: 10px;
+    border: none;
+}
+.play{
+    text-decoration: none;
+    color: gray;
+}
+

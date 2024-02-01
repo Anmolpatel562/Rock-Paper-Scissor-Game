@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="score-section">
+                  <div class="heading">
+                     <h1>ROCK</h1>
+                     <h1>PAPER</h1>
+                     <h1>SCISSOR</h1>
+                  </div>
+                  <div class="score-box">
+                     <div class="cpScore">
+                        <div>COMPUTER SCORE</div>
+                        <div class="countPc"></div>
+                    </div>
+                     <div class="yourScore">
+                        <div>YOUR SCORE</div>
+                        <div class="countUser"></div>
+                     </div>  
+                  </div>
+            </div> 
+            <div class="game-section">
+
+                <!--********** Here *************************-->
+
+               <div class="choose">
+                      <img src="triangle.png" class="tri">
+                      <div class="game">
+                        <div class="rock">
+                            <img src="rock.png" alt="">
+                        </div>   
+                        <div class="scissor">
+                            <img src="scissor.png" alt="">
+                        </div>
+                        <div class="paper">
+                           <img src="paper.png" alt="">
+                        </div>
+                    </div>
+               </div>
+
+
+                <div class="rules-box">
+                    <div class="rulBox">
+                        <div class=" cross">
+                            X
+                        </div>
+                        <div class=" box">
+                            <h1>Game Rules</h1>
+                            <ul class="list">
+                                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                                <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                                <li>If both players lay down the same hand, each player lays down another hand</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                      
+                       <button class="rules-btn">
+                           RULES
+                       </button>
+
+                    </div>   
+                </div>
+            </div>
+        </div>  
+        <div class="players"> 
+            <div class="won">
+                <div class="user">
+                    <h3 class="tit">YOU PICKED</h3>
+                    <div class="youPicked">
+                        <img src="" class="userSelected">
+                    </div>
+                </div>    
+                <div class="text">
+                    <div class="won-text">
+                        <h1 class="wonTitle"></h1>
+                        <h2 class="against">AGAINST PC</h2>
+                    </div>
+                    <button class="replay"></button>
+                </div>
+                <div class="pc">
+                    <h3 class="tit">PC PICKED</h3>
+                    
+                    <div class="pcPicked">
+                        <img src="" class="pcSelected">
+                    </div>
+                </div>  
+            </div>
+        </div>   
+        <button class="next-btn">
+            <a href="./nextPage.html" class="next">NEXT</a>
+        </button>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+body{
+    background-color: #8CC461;
+    cursor: pointer;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+}
+
+.score-section{
+    display: flex;
+    flex-wrap: wrap;
+    border: .3rem solid white;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20% ;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+    padding: 0.6rem;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+.score-box{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.cpScore{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 120px;
+    text-align: center;
+    border-radius: 6px;
+    color: black;
+    font-size: 20px;
+    font-weight:600;
+}
+.yourScore{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    width: 120px;
+    text-align: center;
+    border-radius: 6px;
+    color: black;
+    font-size: 21px;
+    font-weight:600;
+}
+.count{
+    font-size: 45px;
+}
+.heading{
+    font-size: 17px;
+}
+.rock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 8px solid #0074B6;
+}
+.scissor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 8px solid #BD00FF;
+}
+.paper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 8px solid #FFA943;
+}
+.game-section{
+   margin-top: 2rem;
+   display: flex;
+   width: 60%;
+   justify-content: space-between;
+   margin-left: auto;
+   margin-right: 3rem;
+   position: relative;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #004429;
+    width: 17rem;
+    height: 21rem;
+    color: white;
+    border: 10px solid white;
+    border-radius: 12px;
+    padding: 30px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    list-style-type:square;
+    font-size: 13px;
+}
+li::marker{
+    color: #FFD600;
+    font-size:20px;
+}
+.cross{
+   background-color: #FF0000;
+   height: 70px;
+   width: 70px;
+   border:6px solid white;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 30px;
+   font-weight: 900;
+}
+.game{
+    display: flex;
+    position: relative;
+}
+.rules-btn{
+    border: 3px solid white;
+    width: 110px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #8CC461;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    left: 9rem;
+    top:22rem;
+}
+.rules-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    left: 67%;
+    z-index: 11;
+}
+.cross{
+    position: absolute;
+    top: -1.5rem;
+    right: -1rem;
+}
+.tri{
+    margin-top: 2rem;
+    width: 370px;
+    height: 370px;
+    transform: rotate(180deg);
+    
+}
+.choose{
+ position: relative;
+ /* display: none; */
+}
+.scissor{
+  position: absolute;
+  right: 0rem;
+  bottom: 14rem;
+}
+.rock{
+    position: absolute;
+    left: 0rem;
+    bottom: 14rem;
+}
+.paper{
+    position: absolute;
+    left: 7rem;
+    bottom: 2rem;
+}
+
+.active{
+    display: none;
+}
+
+.youPicked{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+.pcPicked{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+.players{
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.won{
+    display: flex;
+    position: absolute;
+    left: 25%;
+    top: 6rem;
+    flex-wrap: wrap;
+    gap: 4rem;
+    /* display: none; */
+}
+.wonTitle{
+    font-size: 50px;
+    font-weight: 800;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.user,.pc{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.won-text{
+    letter-spacing: 5px;
+}
+.replay{
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    color: gray;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: white;
+    border: none;
+    letter-spacing: 2px;
+}
+.next-btn{
+    position: absolute;
+    float: right;
+    border: 3px solid white;
+    width: 110px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #8CC461;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    right: 14%;
+    top: 36.6rem;
+    display: none;
+}
+
+.countPc{
+    font-size: 40px;
+}
+.countUser{
+    font-size: 40px;
+}
+
+.nextActive{
+    display: block;
+}
+.next{
+    text-decoration: none;
+    color: white;
+}
+
+.animation{
+    animation: shadowAnimation 1.5s ease-out infinite;
+    animation-timing-function: 1s;
+}
+
+@keyframes shadowAnimation {
+    100%{
+        box-shadow: 0px 0px 0px 25px rgba(29,168,43),
+                    0px 0px 0px 50px rgba(29,168,43,0.4),
+                    0px 0px 0px 75px rgba(29,168,43,0.2);
+    }
+    
+}
+.tit{
+    z-index: 1;
+}
